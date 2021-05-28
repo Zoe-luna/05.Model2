@@ -68,16 +68,16 @@ public class ProductServiceTest {
 //		product.setProdName("testProd");
 //		product.setProdNo(10008);
 
-		product = productService.getProduct(10020);
+		product = productService.getProduct(10007);
 
 		// ==> console 확인
 		// System.out.println(user);
 
 		// ==> API 확인
-		Assert.assertEquals("testProd", product.getProdName());
-		Assert.assertEquals("testProdDetail", product.getProdDetail());
-		Assert.assertEquals(50000, product.getPrice());
-		Assert.assertEquals(10020, product.getProdNo());
+		Assert.assertEquals("삼성센스", product.getProdName());
+		Assert.assertEquals("노트북", product.getProdDetail());
+		Assert.assertEquals(600000, product.getPrice());
+		Assert.assertEquals(10007, product.getProdNo());
 
 		Assert.assertNotNull(productService.getProduct(10001));
 		// Assert.assertNotNull(userService.getUser("user05"));
